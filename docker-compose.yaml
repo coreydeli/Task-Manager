@@ -1,0 +1,17 @@
+services:
+  python-api:
+    build: ./UserManagementAPI
+    ports:
+      - "5000:5000"
+  node-api:
+    build: ./TaskManagementAPI
+    ports:
+      - "3000:3000"
+  go-frontend:
+    build: ./FrontendServer
+    ports:
+      - "8080:8080"
+
+networks:
+  task-network:
+    driver: bridge

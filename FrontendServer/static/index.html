@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Tracker</title>
+</head>
+<body>
+    <h1>Task Tracker</h1>
+    <div>
+        <h2>Signup</h2>
+        <form id="signupForm">
+            <input type="text" id="signupUsername" placeholder="Username">
+            <input type="password" id="signupPassword" placeholder="Password">
+            <button type="button" onclick="signup()">Signup</button>
+        </form>
+    </div>
+    <div>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+    <div>
+        <h2>Tasks</h2>
+        <form id="taskForm">
+            <input type="text" id="taskTitle" placeholder="Task Title">
+            <button type="button" onclick="addTask()">Add Task</button>
+        </form>
+        <ul id="tasksList"></ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
